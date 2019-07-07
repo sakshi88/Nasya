@@ -1,0 +1,65 @@
+.topSection{
+    padding: 1vh 22vh 1vh 24vh;
+    background-color: #FFFFFF;
+    height: 12vh;
+}
+
+.logo {
+    height: 9vh;
+    width: 9vh;
+}
+
+.emergencyDiv{
+    float: right;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1vh;
+    font-size: 2.5vh;
+    color: #216583;
+    font-weight: 600;
+}
+
+.icon{
+    font-size: 3vh;
+    color: #216583;
+    margin-right: 6px
+}
+
+.navbar{
+    padding: 1vh 22vh 1vh 24vh;
+    font-weight: 500;
+    color: #4F3A65;
+    background-color: #FFFFFF;
+}
+
+.navbar-brand{
+    color: #226fde;
+}
+
+.navbar-toggler{
+    border: none;
+    color: #226fde;
+}
+
+.collapse ul li a {
+    color: #216583;
+    font-size: 2.4vh;
+    font-weight: 450;
+}
+
+.collapse ul li:not(:first-child) a {
+    margin-right: 8vh;
+    background-color: red
+}
+
+@media only screen and (min-width: 300px) and (max-width: 768px) {
+    .navbar{
+        padding: 0vh;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .navbar-brand{
+        display: none;
+    }
+}
