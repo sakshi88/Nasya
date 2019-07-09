@@ -53,8 +53,12 @@
     margin-left: -10px;
 }
 
+.container-fluid{
+    width: 82%
+}
+
 .bottomDiv{
-    margin: 14vh 95vh 20vh 20vh;
+    margin: 14vh 0vh 20vh 0vh;
 }
 
 .bottomDiv .heading {
@@ -106,7 +110,7 @@
     }
 
     .bottomDiv{
-        margin: 6vh 20vh 6vh 10vh;
+        margin: 6vh 0vh 6vh 0vh;
     }
     
     .bottomDiv .heading {
@@ -115,6 +119,16 @@
     
     .bottomDiv p{
         font-size: 2.5vh
+    }
+
+    .bottomDiv button {
+        height: 7vh;
+        width: 40%;
+        padding: 2vh;
+        border-radius: 25px;
+        border: none;
+        font-weight: 500;
+        font-size: 1.7vh
     }
 }
 
@@ -144,7 +158,7 @@
     }
 
     .bottomDiv{
-        margin: 6vh 50vh 6vh 10vh;
+        margin: 6vh 0vh 6vh 0vh;
     }
     
     .bottomDiv .heading {
@@ -156,6 +170,6 @@
     }
 
     .bottomDiv button {
-        width: 100%;
+        width: 50%;
     }
 } 
