@@ -1,0 +1,118 @@
+.whyChooseUsDiv {
+    height: 50vh;
+    background-color: rgba(34,111,222,0.7);
+}
+
+.container-fluid {
+    width: 82%;
+}
+
+.row {
+    padding-top: 10vh;
+}
+
+.card-container {
+    cursor: pointer;
+    height: 35vh;
+    perspective: 600;
+    position: relative;
+    width: 90%;
+}
+
+.card {
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+    width: 100%;
+    background: transparent;
+    border: 2px solid #ffffff
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.card .side {
+    backface-visibility: hidden;
+    border-radius: 6px;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    font-size: 2.2vh
+}
+
+.card .side img {
+     padding: 5vh 0vh 5vh 0vh
+}
+
+.card .back {
+    background: #ffffff;
+    text-align: center;
+    transform: rotateY(180deg);
+    padding-top: 1vh;
+    text-align: center
+}
+
+@media only screen and (min-width: 300px) and (max-width: 768px) {
+    .whyChooseUsDiv {
+        height: 275vh;
+    }
+
+    .card-container {
+        height: 50vh;
+        margin-bottom: 1vh
+    }
+ 
+    .card .side {
+        font-size: 2.7vh
+    }
+
+    .card .side img {
+        padding: 7vh 0vh 7vh 0vh
+   }   
+
+   .card .back {
+    padding-top: 25%
+   }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .whyChooseUsDiv {
+        height: 65vh;
+    }   
+
+    .card-container {
+        height: 45vh;
+    }
+
+    .card .side {
+        font-size: 2.7vh
+    }
+
+    .card .side img {
+        padding: 6vh 0vh 6vh 0vh
+   }   
+
+   .card .back {
+        padding-top: 20%
+   }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1300px) {
+    .card-container {
+        width: 100%;
+    }
+
+    .row {
+        padding-top: 8vh;
+    }
+
+    .card .side img {
+        height: 30vh;
+        width: 15vh;
+        padding: 1vh 0vh 1vh 0vh   
+   }
+}
