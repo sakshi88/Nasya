@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { LandingComponent } from './landing/landing.component';
 import { WhyChooseUsComponent } from './landing/why-choose-us/why-choose-us.component';
 import { OurServicesComponent } from './landing/our-services/our-services.component';
+import { OurTeamComponent } from './landing/our-team/our-team.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingComponent,
     WhyChooseUsComponent,
-    OurServicesComponent
+    OurServicesComponent,
+    OurTeamComponent
   ],
   imports: [
     BrowserModule
