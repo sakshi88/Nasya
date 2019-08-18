@@ -1,28 +1,18 @@
 <div class="whyChooseUsDiv">
   <div class="container-fluid">
+    <div class="headingRow">
+        <p>Why Choose Us</p>
+    </div>
     <div class="row">
-      <div class="offset-lg-1 col-12 col-sm-6 col-md-6 col-lg-2">
+      <div class="col-12 col-sm-6 col-md-6 col-lg-3" *ngFor="let quality of WhyChooseUsArray">
         <div class="card-container">
           <div class="card">
             <div class="side">
-              <img src="/assets/expertise1.png">
-              <p style="color: white">Our Expertise</p>
+              <img src={{quality.imgUrl}}>
+              <p style="color: white">{{quality.textFront}}</p>
             </div>
             <div class="side back" style="color: #226FDE">
-              <p>Our reputation for outstanding clinical care and friendly atmosphere together with a continuous investment in technology facilities ensures we attract leading consultants and specialists to work with us.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-6 col-lg-2" *ngFor="let item of WhyChooseUsArray">
-        <div class="card-container">
-          <div class="card">
-            <div class="side">
-              <img src="/assets/expertise1.png">
-              <p style="color: white">{{item.textFront}}</p>
-            </div>
-            <div class="side back" style="color: #226FDE">
-              <p>{{item.textBack}}</p>
+              <p>{{quality.textBack}}</p>
             </div>
           </div>
         </div>

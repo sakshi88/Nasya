@@ -1,0 +1,27 @@
+.ourServices{
+    padding-top: 5vh;
+}
+
+.container-fluid {
+    width: 82%;
+}
+
+.headingRow{
+    font-size: 5vh;
+    text-align: center;
+    font-weight: 500;
+    color: #216583
+}
+
+.service {
+    background-color: red;
+    display: flex;
+}
+
+.leftContainer{
+    flex: 50%;
+}
+
+.rightContainer {
+    flex: 50%;
+}
