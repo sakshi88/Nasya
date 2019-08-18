@@ -3,15 +3,48 @@
     <div class="headingRow">
       <p>Our Services</p>
     </div>
-    <div class="row">
-      <div class="col-12 col-sm-6 col-md-6 offset-lg-1 col-lg-5 service">
-        <div class="service">
-        <div class="leftContainer">
-          jbfr
+    <div class="row servicesRow">
+      <div class="col-12 col-sm-12 offset-md-1 col-md-5 offset-lg-1 col-lg-5 service" *ngFor="let service of majorServiceDetails">
+        <div class="row">
+          <div class="col-0 col-sm-0 col-md-0 col-lg-4 leftContainer" [ngStyle]="service.style">
+            <img src={{service.imgUrl}} class="serviceImg">
+          </div>
+          <div class="col-0 col-sm-12 col-md-12 col-lg-8 rightContainer">
+            <p class="contractName"><b>{{service.contractName}}</b></p>
+            <p><b>Categories:</b></p>
+            <ul>
+              <li *ngFor="let categoryList of service.category">{{categoryList}}</li>
+            </ul>
+            <p><b>Services contract holds:</b></p>
+            <ul>
+              <li *ngFor="let serviceList of service.servicesList">{{serviceList}}</li>
+            </ul>
+          </div>
         </div>
-        <div class="rightContainer">
-          dhruif
+      </div>
+      <div class="col-12 col-sm-12 offset-md-1 col-md-5 offset-lg-1 col-lg-5 minorService" *ngFor="let service of minorServiceDetails">
+        <div class="row">
+          <div class="col-0 col-sm-0 col-md-0 col-lg-4 minorLeftContainer" [ngStyle]="service.style">
+            <img src={{service.imgUrl}} class="minorServiceImg">
+          </div>
+          <div class="col-0 col-sm-12 col-md-12 col-lg-8 minorRightContainer">
+            <p class="contractName"><b>{{service.contractName}}</b></p>
+            <p><b>Details:</b></p>
+            <p>{{service.detail}}</p>
+            <p><b>{{service.emergencyDetail}}</b></p>
+            <p><b>Contact:</b> {{service.contact}}</p>
+            <p><b>Email:</b> <a href="#">{{service.email}}</a></p>
+          </div>
         </div>
+      </div>
+      <div class="col-12 col-sm-12 offset-md-4 col-md-5 offset-lg-4 col-lg-4 comingSoonService">
+        <div class="row">
+          <div class="col-0 col-sm-0 col-md-4 col-lg-4 comingLeftContainer" style="background-color: rgba(1, 2, 78, 0.7)">
+            <img src="assets/commingsoon.png" class="comingServiceImg">
+          </div>
+          <div class="col-0 col-sm-12 col-md-8 col-lg-8 comingRightContainer">
+            <p class="contractName"><b>Medical Tourism:</b></p>
+          </div>
         </div>
       </div>
     </div>
