@@ -89,7 +89,7 @@
 
 @media only screen and (min-width: 300px) and (max-width: 575px) {
     .service {
-        height: 63vh;
+        height: 70vh;
         font-size: 2.2vh
     }
 
@@ -98,7 +98,7 @@
     }
 
     .minorService {
-        height: 47vh;
+        height: 50vh;
         font-size: 2.2vh
     }
 
